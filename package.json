@@ -1,0 +1,20 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "ByteBank Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamilaSouza/ONE-JavaScript-POO.git"
+  },
+  "author": "Kamila",
+  "license": "ISC",
+  "type":"module",
+  "bugs": {
+    "url": "https://github.com/KamilaSouza/ONE-JavaScript-POO/issues"
+  },
+  "homepage": "https://github.com/KamilaSouza/ONE-JavaScript-POO#readme"
+}
