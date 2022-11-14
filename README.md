@@ -3,7 +3,7 @@ Repositório para exercícios do curso ONE (Oracle Next Education).
 
 Trilha: Front End T3 - ONE &#128218;
 
-Curso: JavaScript - programando a Orientação a Objetos
+Curso: JavaScript - programando a Orientação a Objetos<br>
 Curso: JavaScript - interfaces e Herança em Orientação a Objetos
 
 ______________________________________________________________
