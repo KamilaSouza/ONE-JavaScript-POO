@@ -1,13 +1,17 @@
 export class Client {
-    name;
-    #cpf;
 
-    get cpf() {
-       return this.#cpf;
+    constructor(name, cpf, password) {
+        this.name = name;
+        this._cpf = cpf;
+
+        this._password = password;
     }
 
-    constructor(name, cpf) {
-        this.name = name;
-        this.#cpf = cpf;
+    get cpf() {
+        return this._cpf;
+    }
+
+    authenticate() {
+        return true;
     }
 }

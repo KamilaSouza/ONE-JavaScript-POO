@@ -1,21 +1,17 @@
-import { Client } from "./client.js";
-import { CurrentAccount } from "./CurrentAccount.js";
+import { Client } from "./Client.js";
+import { Manager } from "./Employees/Manager.js"
+import { Director } from "./Employees/Director.js"
+import { AuthenticationSystem } from "./AuthenticationSystem.js";
 
-const client1 = new Client("Ricardo", 11122233309);
-const client2 = new Client("Alice", 11122233308);
+const director = new Director("Rodrigo", 10000, 12345678900);
+director.registerPassword("12345")
+const manager = new Manager("Pedro", 5000, 12333345678)
+manager.registerPassword("123")
+const client = new Client("Kami", 12398745600, "543")
 
-const currentAccountRicardo = new CurrentAccount(client1, 1001);
-const currentAccountAlice = new CurrentAccount(client2, 1001);
+const islogged = AuthenticationSystem.login(director, "12345");
+const islogged1 = AuthenticationSystem.login(manager, "123");
+const islogged2 = AuthenticationSystem.login(client, "54321")
 
-currentAccountRicardo.deposit(500);
-currentAccountRicardo.transfer(200, currentAccountAlice)
+console.log(islogged, islogged1, islogged2)
 
-console.log(
-    " Account owner name:", currentAccountRicardo.client.name, "\n",
-    "CPF:", currentAccountRicardo.client.cpf, "\n",
-    "Agency:", currentAccountRicardo.agency, "\n",
-    "Balance:", currentAccountRicardo.balance
-);
-
-console.log(currentAccountAlice, "Balance:", currentAccountAlice.balance)
-console.log(CurrentAccount.accountCounter)
